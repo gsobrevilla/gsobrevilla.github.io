@@ -2,7 +2,7 @@
 require "i18n"
 
 # Pages
-require "./pages/test.rb"
+require "./pages/index.rb"
 
 class SiteRenderer
 
@@ -10,6 +10,6 @@ class SiteRenderer
         # Sets current locale
         I18n.locale = locale
         # Renders all pages
-        Test.new.render
+        Index.new.render
     end
 end

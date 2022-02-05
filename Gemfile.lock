@@ -7,7 +7,7 @@ GEM
       cgi
     i18n (1.9.1)
       concurrent-ruby (~> 1.0)
-    require_all (3.0.0)
+    webrick (1.7.0)
 
 PLATFORMS
   arm64-darwin-20
@@ -15,7 +15,7 @@ PLATFORMS
 DEPENDENCIES
   erb
   i18n
-  require_all
+  webrick
 
 BUNDLED WITH
    2.3.6

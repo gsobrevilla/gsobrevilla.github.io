@@ -8,7 +8,7 @@ class Renderer
     end
   
     def render
-        template_file = File.open(@template_file_path, 'rb', &:read)
+        template_file = File.open(@template_file_path, 'rb', encoding: 'utf-8', &:read)
         File.write(@result_file_path, ERB.new(template_file).result(@binding_provider&.get_binding))
     end
 end
