@@ -8,3 +8,12 @@
 .welcome-language > a:hover {
     color: rgba(255, 255, 255, 1);
 }
+
+.welcome-custom-image {
+    opacity: 0.2;
+}
+@media all and (min-width: 768px) {
+    .welcome-custom-image {
+        opacity: 1;
+    }
+}
