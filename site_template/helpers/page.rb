@@ -22,6 +22,10 @@ class Page
         I18n.t(key)
     end
 
+    def l(path, locale = I18n.locale)
+        "/site/#{locale.to_s}/#{path}"
+    end
+
     def render  
         Renderer.new(template_file_path, rendered_view_file_path, self).render
     end
