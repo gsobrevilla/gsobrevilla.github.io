@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /apps/*
+Disallow: /saldo_cordoba/*
+Disallow: /saldo_la_rioja/*
+Disallow: /saldo_panama/*
+Disallow: /saldo_salta/*
+Disallow: /saldo_tucuman/*
+Disallow: /site_template/*
