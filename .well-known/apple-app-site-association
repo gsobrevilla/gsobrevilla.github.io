@@ -1,0 +1,15 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": ["257QEDK4HV.com.cannondale.simon"],
+             "components": [
+               {
+                  "/": "/*",
+                  "comment": "Matches any URL"
+               }
+             ]
+           }
+       ]
+   }
+}
