@@ -1,0 +1,27 @@
+<head>
+    <title>Cannondale Devices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<h1>Cannondale Devices</h1>
+
+<h2>Params</h2>
+
+<ul id="paramsList"></ul>
+<script>
+  function getAllQueryParams() {
+    const queryParams = new URLSearchParams(window.location.search);
+    const paramsList = document.getElementById('paramsList');
+
+    for (const [param, value] of queryParams) {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${param}: ${value}`;
+      paramsList.appendChild(listItem);
+    }
+  }
+  getAllQueryParams();
+</script>
+
+<h2>Links</h2>
+
+<a href="https://www.garmin.com/en-US/p/641212">Garmin Cadence Sensor</a>
