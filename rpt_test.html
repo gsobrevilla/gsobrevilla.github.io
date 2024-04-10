@@ -18,7 +18,7 @@
                 var field = line.substr(index, width).trim();
                 index += width; // Move the index to the next field
 
-                if (lineResult.length > 0) {
+                if (index > 0) {
                     // Add a tab before adding the next field, but only if this isn't the first field
                     lineResult += "\t";
                 }
