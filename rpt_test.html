@@ -1,0 +1,37 @@
+<textarea id="start"></textarea>
+<textarea id="end"></textarea>
+<button onclick="perform()">Go</button>
+<script>
+    function perform() {
+        var text = document.getElementById("start").value
+        console.log(text);
+
+        var result = "";
+        var columnWidths = [5, 5, 10]; // Update these values based on your specific needs
+
+        for (let line of text.split('\n')) {
+            var lineResult = "";
+            var index = 0;
+
+            for (let width of columnWidths) {
+                // Extract the field using the column width and trim any extra spaces
+                var field = line.substr(index, width).trim();
+                index += width; // Move the index to the next field
+
+                if (lineResult.length > 0) {
+                    // Add a tab before adding the next field, but only if this isn't the first field
+                    lineResult += "\t";
+                }
+                lineResult += field;
+            }
+
+            // Add the processed line to the result, with a newline if it's not the first line
+            if (result.length > 0) {
+                result += "\n";
+            }
+            result += lineResult;
+        }
+
+        document.getElementById('end').value = result;
+    }
+</script>
